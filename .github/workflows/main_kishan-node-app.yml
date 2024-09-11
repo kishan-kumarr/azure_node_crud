@@ -59,4 +59,4 @@ jobs:
           app-name: 'kishan-node-app'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_052C0E48DE304021B2F3748F17ACABF8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6851C65441D1405C8FF04BAE36D5972D }}
