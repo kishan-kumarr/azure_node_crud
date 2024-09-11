@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 app.get("/", (req, res) => {
-    res.status(200).json({success: true, message: "I am working... at home"});
+    res.status(200).json({success: true, message: "I am working... at"});
 })
 
 app.listen(PORT, () => {
