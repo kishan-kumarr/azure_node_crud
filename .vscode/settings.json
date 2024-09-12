@@ -2,5 +2,7 @@
     "appService.zipIgnorePattern": [
         "node_modules{,/**}",
         ".vscode{,/**}"
-    ]
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/89980a5e-2dc3-4cf3-b5e7-a668f7a441c5/resourceGroups/aspire-learning/providers/Microsoft.Web/sites/kishan-node-app",
+    "appService.deploySubpath": "."
 }
