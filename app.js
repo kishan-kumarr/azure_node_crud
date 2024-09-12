@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 const app = express();
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8000; 
 
 // Middleware
 app.use(bodyParser.json());
@@ -93,9 +93,6 @@ app.delete('/:id', async (req, res) => {
     }
 });
 
-app.get("/health", (req, res) => {
-    res.status(200).json({success: true, message: "Health is ok!!!"})
-})
 
 
 app.use((err, req, res, next) => {
