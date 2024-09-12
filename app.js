@@ -93,6 +93,11 @@ app.delete('/:id', async (req, res) => {
     }
 });
 
+app.use("/health", (req, res) => {
+    res.status(200).json({success: true, message: "Health is ok!!!"})
+})
+
+
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).send(err.stack);
