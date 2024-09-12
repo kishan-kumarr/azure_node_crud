@@ -3,12 +3,14 @@ import "dotenv/config"
 import bodyParser from "body-parser";
 import dbConn from "./db/dbcon.js";
 import mongoose from "mongoose";
+import cors from "cors";
 const app = express();
 
 const PORT = process.env.PORT || 8000;
 
 // Middleware
 app.use(bodyParser.json());
+app.use(cors());
 
 //database 
 dbConn();
