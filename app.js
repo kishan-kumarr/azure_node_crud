@@ -93,6 +93,11 @@ app.delete('/:id', async (req, res) => {
     }
 });
 
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send(err.stack);
+});
+
 app.listen(PORT, () => {
     console.log(`Server listening on http://localhost:${PORT}`);
 });
